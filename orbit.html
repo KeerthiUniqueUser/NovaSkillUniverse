@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkillOrbit - Visualizer</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="orbit.js" defer></script>
+</head>
+<body>
+  <nav class="topbar">
+    <h1>🪐 SkillOrbit</h1>
+    <div class="controls">
+      <input type="text" id="skillInput" placeholder="Enter skill name..." />
+      <select id="levelSelect">
+        <option>Beginner</option>
+        <option>Intermediate</option>
+        <option>Advanced</option>
+      </select>
+      <button id="addSkillBtn">Add Skill</button>
+      <button onclick="location.href='index.html'" class="home-btn">🏠 Home</button>
+    </div>
+  </nav>
+
+  <div class="orbit-container">
+    <div class="sun"></div>
+  </div>
+  <!-- 🌟 SkillOrbit Chatbot -->
+<div id="chatbot-container">
+  <div id="chatbot-header">🤖 SkillOrbit Mentor</div>
+  <div id="chatbot-messages"></div>
+  <div id="chatbot-input-area">
+    <input type="text" id="chatbot-input" placeholder="Ask about any skill..." />
+    <button id="chatbot-send">Send</button>
+  </div>
+</div>
+
+<!-- Floating Chat Button -->
+<button id="chatbot-toggle">💬</button>
+
+</body>
+</html>
